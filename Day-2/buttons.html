@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons - BiiitUp</title>
+
+    <style>
+        /* button {
+            color: #002c22;
+            background-color: yellow;
+        } */
+        .btn {
+            width: 200px;
+            height: 50px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <button disabled="false">Click Me</button>
+    <button onclick="callAutoFocus()" autofocus>
+        Button with AutoFocus
+    </button>
+    <!-- Disabled state of the button -->
+    <button onclick="callAutoFocus()" disabled>Disabled Button</button>
+
+    <button class="btn green">
+        Green Button
+    </button>
+    <button class="btn blue">
+        Blue Button
+    </button>
+</body>
+
+<script>
+    function callAutoFocus() {
+        alert('Auto focus button clicked')
+    }
+</script>
+
+</html>
