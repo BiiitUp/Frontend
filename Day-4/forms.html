@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Frontend Development</title>
+
+    <style>
+        form {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            border: 10px solid #002c22;
+            padding: 40px 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Forms</h1>
+
+        <!-- Forms: Syntax -->
+        <form>
+            <!-- Form Elements -->
+            <!-- Text: -->
+            <label for="nameField">Enter First Name</label>
+            <input id="nameField" type="text" placeholder="Enter your name" required value="Praveen" disabled/>
+
+            <!-- Password: -->
+            <input type="password" placeholder="Enter your password" />
+
+            <!-- Email: -->
+            <input type="email" placeholder="Enter your email" />
+
+            <!-- Number: -->
+            <input type="number" placeholder="Enter your score" min="20" max="25" />
+
+            <!-- Date: -->
+            <input type="date" />
+
+            <!-- File: -->
+            <input type="file">
+
+            <!-- Radio: -->
+            <label for="gender">Select Your Gender</label>
+            <input type="radio" name="gender" id="gender" /> Male
+            <input type="radio" name="gender" id="gender" /> Fe Male
+
+            <!-- Checkbox -->
+            <label for="subjects">Select Subjects</label>
+            <input type="checkbox" name="subjects" id="subjects" value="English" /> English
+            <input type="checkbox" name="subjects" id="subjects" value="Telugu" /> Telugu
+
+            <!-- Select -->
+            <label for="state">Select State</label>
+            <select name="state" id="state">
+                <option value="Andhra Pradesh">AP</option>
+                <option value="Telangana">TS</option>
+                <option value="Tamilnadu">TN</option>
+            </select>
+
+            <!-- Text Area -->
+            <textarea name="message" id="message" cols="10" rows="3"></textarea>
+
+            <!-- Submit -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+</body>
+
+</html>
