@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors In CSS</title>
+
+    <style>
+        h2 {
+            color: green;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        div {
+            background-color: yellowgreen;
+            padding: 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .green_text {
+            color: green;
+            background-color: yellowgreen;
+            padding: 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .another_class_with_color_black {
+            color: blue;
+        }
+
+        #tomato_id {
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Selectors in CSS</h1>
+
+        <!-- Type Selector -->
+        <h2>
+            Type Selector
+        </h2>
+
+        <div>
+            <p>Bye Good!</p>
+        </div>
+
+        <!-- Class Selector -->
+        <p class="green_text another_class_with_color_black">
+            Text with green Color
+        </p>
+
+        <!-- ID Selector -->
+        <p id="tomato_id">
+            Tomato Text with Color Tomato
+        </p>
+    </main>
+</body>
+</html>
