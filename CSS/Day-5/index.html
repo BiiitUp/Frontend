@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Index</title>
+
+    <style>
+        h1 {
+            background-color: aquamarine;
+        }
+        img {
+            position: absolute;
+            top: 10px;
+            z-index: -1;
+        }
+
+        .image-2 {
+            top: 50px;
+            left: 50px;
+            z-index: -1;
+        }
+        h1 {
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Z Index</h1>
+
+        <h1>First line text</h1>
+        <img height="100px" width="auto" src="https://biiitup.com/biiitup-social-preview.png" alt="BiiitUp">
+        <img class="image-2" height="100px" width="auto" src="https://biiitup.com/biiitup-social-preview.png" alt="BiiitUp">
+        <p>Bottom text</p>
+    </main>
+</body>
+
+</html>
