@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Day 1</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- DOM - Document Object Model -->
+    <!-- 1. Get Element By Id -->
+    <!-- 2. Get Elements By ClassName -->
+    <!-- 3. Get Elements  By Tag Name -->
+    <!-- 4. Get Element By Query selector -->
+    <!-- 5. querySelectorAll -->
+    <h2>DOM Manipulation</h2>
+
+
+    <div class="container">
+        <div class="">
+            <h3 id="h3-element">Cities in AP</h3>
+
+            <ul>
+                <li class="odd">Hyderabad</li>
+                <li>Vijayawada</li>
+                <li class="odd">Vizag</li>
+                <li>Guntur</li>
+                <li>Nellore</li>
+            </ul>
+        </div>
+    </div>
+    <!-- <script src="./script.js"></script> -->
+    <script>
+        let h3Element = document.getElementById('h3-element')
+        h3Element.style.color = 'red';
+
+        let oddElements = document.getElementsByClassName('odd')
+        console.log('Odd Elements: ', oddElements)
+
+        for (let i = 0; i < oddElements.length; i++) {
+            oddElements[i].style.color = 'green'
+        }
+
+        let tagElements = document.getElementsByTagName('li');
+        console.log('Tag Elements: ', tagElements)
+
+        for (let j = 0; j < tagElements.length; j++) {
+            if ((j + 1) % 2 === 0) {
+                tagElements[j].style.color = 'blue'
+            }
+        }
+
+        let queryElement = document.querySelector('.odd')
+        console.log('Query Selector Element: ', queryElement)
+        queryElement.style.color = 'yellow'
+
+        let allQueryElements = document.querySelectorAll('li')
+        console.log('Query Selector All: ', allQueryElements)
+    </script>
+</body>
+
+</html>
