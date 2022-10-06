@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Day 2</title>
+</head>
+<body>
+    <h1>DOM - Day 2</h1>
+    <!-- 1. Create Element -->
+    <!-- 2. Append Element -->
+    <!-- 3. Remove Child From Parent -->
+    <!-- 4. Replace Child From Parent -->
+    <!-- 5. Insert Before -->
+
+    <!-- Creating Element -->
+    <div id="container">
+        <h2 id="heading">Hello World!</h2>
+        <h3 id="heading-3">Heading Three Element</h3>
+    </div>
+
+    <script>
+        // Here we are creating a new element
+        let paragraghElement = document.createElement('p')
+        paragraghElement.innerText = "This is a paragraph"
+
+        // Below we are adding the element to the DOM
+        const containerElement = document.getElementById('container')
+        containerElement.appendChild(paragraghElement)
+
+        // Removing Child From Parent
+        let headingElement = document.getElementById('heading')
+        containerElement.removeChild(headingElement)
+
+        // Replacing Child From Parent
+        let headingThreeElement = document.getElementById('heading-3')
+        containerElement.replaceChild(headingElement, headingThreeElement)
+
+        // Insert Before
+        containerElement.insertBefore(headingThreeElement, paragraghElement)
+    </script>
+
+    <!-- Assignment: -->
+</body>
+</html>

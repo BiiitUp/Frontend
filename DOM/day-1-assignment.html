@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Day 1 Assignment</title>
+
+    <style>
+        .card {
+            border: 2px solid black;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2>Card 1</h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2>Card 2</h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2>Card 3</h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2>Card 4</h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2>Card 5</h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2>Card 6</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let cards = document.querySelectorAll('.card');
+        console.log('Cards: ', cards)
+
+        for (let i = 1; i <= cards.length; i++) {
+            const card = cards[i - 1];
+            console.log('I value: ', i)
+            if (i % 2 === 0) {
+                card.style.background = 'blue'
+            } else {
+                card.style.border = '2px solid blue'
+            }
+
+            if (isPrime(i)) {
+                // card styling
+            }
+        }
+
+        function isPrime(number) {
+            return true;
+        }
+    </script>
+</body>
+
+</html>
