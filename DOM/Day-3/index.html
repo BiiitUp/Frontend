@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Day 3</title>
+</head>
+
+<body>
+    <main>
+        <h2>Content</h2>
+        <div id="container"></div>
+
+        <button onclick="removeStyle()">Remove Style</button>
+        <button onclick="addStyle()">Add Style</button>
+        <button onclick="toggleStyle()">Toggle Style</button>
+    </main>
+
+    <script>
+        const containerElement = document.getElementById('container')
+
+        const paraElement = document.createElement('button')
+        paraElement.innerText = 'Hello World'
+        paraElement.classList.add('green-button')
+
+        containerElement.appendChild(paraElement)
+
+        function removeStyle() {
+            paraElement.classList.remove('green-button');
+        }
+
+        function addStyle() {
+            paraElement.classList.add('green-button')
+        }
+
+        function toggleStyle() {
+            paraElement.classList.toggle('active');
+        }
+    </script>
+
+    <style>
+        .green-button {
+            color: green;
+            background-color: aliceblue;
+            padding: 10px;
+            border-radius: 12px;
+            border: 5px solid blue;
+        }
+
+        .active {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</body>
+
+</html>
